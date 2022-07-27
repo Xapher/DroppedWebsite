@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oasis At Rita Ranch</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header id="Header">
+		<section id="welcomeBar" class="center">
+			<a id = "Home"href="index.html"><img src="Assets/images/OasisIcon.png"></a>
+		</section>
+		<section id="Menu" class="center">
+			<ul>
+				<li>
+					<a href="tempForum.html">Forum</a>
+				</li>
+				<li>
+					<a href="events.html">Events</a>
+				</li>
+				<li>
+					<a href="homechurch.html">Home Churches</a>
+				</li>
+				<li>
+					<a href="messages.html">Messages</a>
+				</li>
+				<li>
+					<a id="HomeLink" href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+				<li>
+					<a href="newsletter.html">News Letter</a>
+				</li>
+				<li>
+					<a href="media.html">Media</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="donate.html">Donate!</a>
+				</li>
+			</ul>
+		</section>
+	</header>
+	<section id="contentContainer" class="center">
+		<section id="messageContent" class="center">
+			<section id="message">
+				<audio controls id="latestMessage">
+					<source src="Assets\messages\recent\Luke_7_18_35.mp3" type="audio/mpeg">
+					</audio>
+					<a id="download2"  href="Assets\messages\recent\Luke_7_18_35.mp3" download>Download!</a>
+				</section>
+				<section id="mc" class="inlinef">
+					<section id="selector">
+						<h1 class="center">Past Sunday Messages</h1>
+						<ul>
+							<button onclick="expand(2016)">&#9655;&nbsp;&nbsp;&nbsp;&nbsp;2016</button>
+							<ul id ="2016" class="dateSelector" class="inactiveDate">
+								<li>
+									<button class="monthSelector" onclick="expand('May16')">May</button>
+									<ul id="May16" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\May\\newsletter_16_05_23.pdf'">16/05/23</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\May\\newsletter_16_05_16.pdf'">16/05/16</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\May\\newsletter_16_05_09.pdf'">16/05/09</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('April16')">April</button>
+									<ul id="April16" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\April\\newsletter_16_04_25.pdf'">16/04/25</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\April\\newsletter_16_04_18.pdf'">16/04/18</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\April\\newsletter_16_04_04.pdf'">16/04/04</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('March16')">March</button>
+									<ul id="March16" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\March\\newsletter_16_03_21.pdf'">16/03/21</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\March\\newsletter_16_03_07.pdf'">16/03/07</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('February16')">February</button>
+									<ul id="February16" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\February\\newsletter_16_02_29-1.pdf'">16/02/29-1</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\February\\newsletter_16_02_22.pdf'">16/02/22</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\February\\newsletter_16_02_15.pdf'">16/02/15</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\February\\newsletter_16_02_08.pdf'">16/02/08</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\February\\newsletter_16_02_01.pdf'">16/02/01</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('January16')">January</button>
+									<ul id="January16" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\January\\newsletter_16_01_25.pdf'">16/01/25</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\January\\newsletter_16_01_18.pdf'">16/01/18</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\January\\newsletter_16_01_11.pdf'">16/01/11</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2016\\January\\newsletter_16_01_04.pdf'">16/01/04</button>
+										</li>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<button onclick="expand(2015)">&#9655;&nbsp;&nbsp;&nbsp;&nbsp;2015</button>
+							<ul id ="2015" class="dateSelector" class="inactiveDate">
+								<li>
+									<button class="monthSelector" onclick="expand('December15')">December</button>
+									<ul id="December15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\December\\newsletter_15_12_21.pdf'">15/12/21</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\December\\newsletter_15_12_07.pdf'">15/12/07</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('November15')">November</button>
+									<ul id="November15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\November\\newsletter_15_11_30.pdf'">15/11/30</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\November\\newsletter_15_11_23.pdf'">15/11/23</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\November\\newsletter_15_11_16.pdf'">15/11/16</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\November\\newsletter_15_11_09.pdf'">15/11/09</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('October15')">October</button>
+									<ul id="October15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\October\\newsletter_15_10_26.pdf'">15/10/26</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\October\\newsletter_15_10_19.pdf'">15/10/19</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\October\\newsletter_15_10_12.pdf'">15/10/12</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\October\\newsletter_15_10_05.pdf'">15/10/05</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('September15')">September</button>
+									<ul id="September15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\September\\newsletter_15_09_28.pdf'">15/09/28</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\September\\newsletter_15_09_20.pdf'">15/09/20</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\September\\newsletter_15_09_14.pdf'">15/09/14</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\September\\newsletter_15_09_07.pdf'">15/09/07</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('August15')">August</button>
+									<ul id="August15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\August\\newsletter_15_08_31.pdf'">15/08/31</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\August\\newsletter_15_08_17.pdf'">15/08/17</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\August\\newsletter_15_08_10.pdf'">15/08/10</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\August\\newsletter_15_08_03.pdf'">15/08/03</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('July15')">July</button>
+									<ul id="July15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\July\\newsletter_15_07_27.pdf'">15/07/27</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\July\\newsletter_15_07_20.pdf'">15/07/20</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('June15')">June</button>
+									<ul id="June15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\June\\newsletter_15_06_22.pdf'">15/06/22</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\June\\newsletter_15_06_15.pdf'">15/06/15</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\June\\newsletter_15_06_08.pdf'">15/06/08</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\June\\newsletter_15_06_01.pdf'">15/06/01</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('May15')">May</button>
+									<ul id="May15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\May\\newsletter_15_05_25.pdf'">15/05/25</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\May\\newsletter_15_05_18.pdf'">15/05/18</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\May\\newsletter_15_05_04.pdf'">15/05/04</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('April15')">April</button>
+									<ul id="April15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\April\\newsletter_15_04_20.pdf'">15/04/20</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\April\\newsletter_15_04_13.pdf'">15/04/13</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\April\\newsletter_15_04_06.pdf'">15/04/06</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('March15')">March</button>
+									<ul id="March15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\March\\newsletter_15_03_23.pdf'">15/03/23</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\March\\newsletter_15_03_09.pdf'">15/03/09</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\March\\newsletter_15_03_02.pdf'">15/03/02</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('February15')">February</button>
+									<ul id="February15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\February\\newsletter_15_02_23.pdf'">15/02/23</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\February\\newsletter_15_02_16.pdf'">15/02/16</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\February\\newsletter_15_02_09.pdf'">15/02/09</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\February\\newsletter_15_02_02.pdf'">15/02/02</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('January15')">January</button>
+									<ul id="January15" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\January\\newsletter_15_01_26.pdf'">15/01/26</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\January\\newsletter_15_01_19.pdf'">15/01/19</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\January\\newsletter_15_01_12.pdf'">15/01/12</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2015\\January\\newsletter_15_01_05.pdf'">15/01/05</button>
+										</li>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<button onclick="expand(2014)">&#9655;&nbsp;&nbsp;&nbsp;&nbsp;2014</button>
+							<ul id ="2014" class="dateSelector" class="inactiveDate">
+								<li>
+									<button class="monthSelector" onclick="expand('December14')">December</button>
+									<ul id="December14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\December\\newsletter_14_12_22.pdf'">14/12/22</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\December\\newsletter_14_12_15.pdf'">14/12/15</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\December\\newsletter_14_12_01.pdf'">14/12/01</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('November14')">November</button>
+									<ul id="November14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\November\\newsletter_14_11_17.pdf'">14/11/17</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\November\\newsletter_14_11_10.pdf'">14/11/10</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\November\\newsletter_14_11_03.pdf'">14/11/03</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('October14')">October</button>
+									<ul id="October14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\October\\newsletter_14_10_131.pdf'">14/10/131</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\October\\newsletter_14_10_06.pdf'">14/10/06</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('September14')">September</button>
+									<ul id="September14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\September\\newsletter_14_09_29.pdf'">14/09/29</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\September\\newsletter_14_09_22.pdf'">14/09/22</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\September\\newsletter_14_09_15.pdf'">14/09/15</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\September\\newsletter_14_09_08.pdf'">14/09/08</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\September\\newsletter_14_09_01.pdf'">14/09/01</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('August14')">August</button>
+									<ul id="August14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\August\\newsletter_14_08_25.pdf'">14/08/25</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\August\\newsletter_14_08_18.pdf'">14/08/18</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\August\\newsletter_14_08_11.pdf'">14/08/11</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\August\\newsletter_14_08_04.pdf'">14/08/04</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('July14')">July</button>
+									<ul id="July14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\July\\newsletter_14_07_28.pdf'">14/07/28</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\July\\newsletter_14_07_14.pdf'">14/07/14</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\July\\newsletter_14_07_07.pdf'">14/07/07</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('June14')">June</button>
+									<ul id="June14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\June\\newsletter_14_06_30.pdf'">14/06/30</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\June\\newsletter_14_06_23.pdf'">14/06/23</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\June\\newsletter_14_06_16.pdf'">14/06/16</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\June\\newsletter_14_06_02.pdf'">14/06/02</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('May14')">May</button>
+									<ul id="May14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\May\\newsletter_14_05_26.pdf'">14/05/26</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\May\\newsletter_14_05_19.pdf'">14/05/19</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\May\\newsletter_14_05_12.pdf'">14/05/12</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\May\\newsletter_14_05_05.pdf'">14/05/05</button>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button class="monthSelector" onclick="expand('April14')">April</button>
+									<ul id="April14" class="inactiveDate">
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\April\\newsletter_14_04_28.pdf'">14/04/28</button>
+										</li>
+										<li>
+											<button class="monthSelector" onclick="javascript: document.getElementById('nl').src = 'Assets\\NewsLetters\\2014\\April\\newsletter_14_04_21.pdf'">14/04/21</button>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+					</ul>
+				</ul>
+			</section>
+			<section id="messageText">
+				<h1>Read the Message</h1>
+				<p>
+					;alkjds;lfkja;lskd
+				</p>
+				<p>
+					;alkjds;lfkja;lskdjf;aslkdj
+				</p>
+				<p>
+					;alkjds;lfkja;lskdjf;a
+				</p>
+				<p>
+					;alkjds;lfkja;lskdjf;aslkdj
+				</p>
+				<p>
+					;alkjds;lf
+				</p>
+				<p>
+					;alkjds;lfkja;lsk
+				</p>
+				<p>
+					;alkjds;lfkja;
+				</p>
+				<p>
+					;alkjds;lfkj
+				</p>
+			</section>
+		</section>
+		
+	</section>
+</section>
+<footer id="footer">
+	<section id="footerContent" class="center">
+		<p>Copyright &#169; 2016 Oasis at Rita Ranch - Developed by Bryan Schreckengost</p>
+		<section id="SocialMedia">
+			<a href=""><img src="Assets/images/Twitter.png"></a>
+			<a href=""><img src="Assets/images/Facebook.png"></a>
+		</section>
+	</section>
+</footer>
+</body>
+</html>
